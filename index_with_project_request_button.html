@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THE SYNdicate</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #request-form {
+        padding: 60px 20px;
+        background-color: #111;
+        max-width: 600px;
+        margin: 60px auto;
+        border-radius: 10px;
+    }
+    #request-form h2 {
+        color: #00BFFF;
+        text-align: center;
+    }
+    #request-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    #request-form input,
+    #request-form textarea {
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+    #request-form button {
+        padding: 10px;
+        background-color: #00BFFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    .btn.scroll {
+        background-color: #FFA500;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>THE SYNdicate</h1>
+  <p>Powering the Future of Sound, Vision & Storytelling</p>
+  <div class="btn-group">
+    <button class="btn">Explore SMG</button>
+    <button class="btn scroll" id="project-request" onclick="document.getElementById('request-form').scrollIntoView({ behavior: 'smooth' });">
+      Request a Custom Song
+    </button>
+  </div>
+</header>
+
+<section>
+  <h2>What is THE SYNdicate?</h2>
+  <p>
+    THE SYNdicate is an AI-powered creative collective built at the crossroads of culture, code, and imagination.
+    As the command center for SMG and The VIZIONCY, we create, curate, and customize content that speaks to the soul — powered by machines.
+  </p>
+</section>
+
+<section>
+  <h2>SMG – SYN Media Group</h2>
+  <p>
+    SMG is the official AI artist label under THE SYNdicate. From emotionally intelligent love songs to trap-drill bangers,
+    our AI artists (the 7 SYNs) are deeply storied and visually alive.
+  </p>
+</section>
+
+<section>
+  <h2>The VIZIONCY</h2>
+  <p>
+    Whether you're a beatmaker needing a demo or someone celebrating a life moment, The VIZIONCY turns your story into sound
+    and cinema using powerful AI tools.
+  </p>
+</section>
+
+<section id="request-form">
+  <h2>Request a Custom Song or Video</h2>
+  <form action="https://formspree.io/f/mqabnodv" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="occasion" placeholder="Occasion (e.g. Birthday, Beat, Wedding)" />
+    <textarea name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<footer>
+  &copy; THE SYNdicate 2025 — Powered by Culture + Code
+</footer>
+
+</body>
+</html>
